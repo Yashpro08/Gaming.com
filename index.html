@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#webpage{
+			display: none;
+		}
+		#loader{
+			height: 300px;width: 300px;border-radius: 50%;
+			border: solid;border-width: 11px;border-color: gold;
+			border-top: solid 11px blue;margin-left: auto;margin-right: auto;margin-top: 250px;
+			animation-name: load;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+		@keyframes load{
+			0%{transform: rotate(0deg);}
+
+			100%{transform: rotate(360deg);}
+		}
+	</style>
+</head>
+<body onload="wait()">
+<div id="loader"></div>
+<div id="webpage">
+	<style type="text/css">
+		body{
+			background-image: url(https://images-na.ssl-images-amazon.com/images/I/61eb2Yo-TTL._AC_SL1500_.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.fa{
+			font-size: 60px;
+			color: blue;
+			padding-top: 50%;
+		}
+		
+	</style>
+
+<a href="file:///Users/yashmehta/Desktop/html/Gaming.html" target="_blank" style="padding-left: 37%;font-size: 40px;">Press this to go to the main webpage</a>
+
+
+<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+
+
+<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+
+<a href="https://www.whatsapp.com" class="fa fa-whatsapp"></a>
+
+
+<a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+</div>
+<!-- <button onclick="show()"></button> -->
+</body>
+</html>
+
+<script type="text/javascript">
+
+	function wait(){
+		setTimeout(show, 4000);
+	}
+
+function show(){
+	var loader=document.getElementById('loader');
+	var webpage=document.getElementById('webpage');
+	loader.style.display="none";
+	webpage.style.display="block";
+
+}
+
+</script>

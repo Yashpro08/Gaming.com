@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title></title>
+	<style type="text/css">
+		#webpage{
+			display: none;
+		}
+		#loader{
+			height: 300px;width: 300px;border-radius: 50%;
+			border: solid;border-width: 11px;border-color: gold;
+			border-top: solid 11px blue;margin-left: auto;margin-right: auto;margin-top: 250px;
+			animation-name: load;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+		@keyframes load{
+			0%{transform: rotate(0deg);}
+
+			100%{transform: rotate(360deg);}
+		}
+			.abc{
+		list-style-type: none;background-color: black; padding 13px;
+	}
+	.fa{
+			font-size: 60px;
+			color: blue;
+		}
+a{
+	text-decoration: none; color white; padding: 15px;
+}
+li{
+	display: inline; font-size: 30px;
+}
+a:hover{
+background-color: white;
+}
+ul{
+	background-image: linear-gradient(to right, red,yellow,green,purple,pink);
+}
+
+	</style>
+</head>
+<body onload="wait()" style="background-color: black;">
+<div id="loader"></div>
+<div id="webpage">
+	<h1 style="text-align: center;color: white;font-family: cursive;"><u><b><i><big>Gaming</big></i></b></u></h1>
+
+
+
+<ul>
+		<li class="abc"><a href="consoles.html" target="_blank">Consoles</a></li>
+		<li class="abc"><a href="games.html" target="_blank">Games</a></li>
+		<li class="abc"><a href="SIGN UP.HTML" target="_blank">Sign Up</a></li>
+		<li class="abc"><a href="LOG IN.HTML" target="_blank">Log In</a></li>
+	
+		
+	</ul>
+
+<img src=" https://i.ytimg.com/vi/dDt_DfuXv4w/maxresdefault.jpg"style="width: 700px;height:500px;padding-left: 60%;">
+
+ 
+
+<p style="color: white; font-size: 40px;"> Love gaming and want to have all the luxuries to do it professionally anywhere. Well this is the right website for you. </p>
+
+<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+
+
+<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+
+<a href="https://www.whatsapp.com" class="fa fa-whatsapp"></a>
+
+
+<a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+
+<img src="https://i.pinimg.com/originals/2c/9f/5d/2c9f5da1e73fe1c83b8e3152953f16e5.jpg" style="width: 700px;height:500px;">
+
+
+
+</div>
+<!-- <button onclick="show()"></button> -->
+</body>
+</html>
+
+<script type="text/javascript">
+
+	function wait(){
+		setTimeout(show, 4000);
+	}
+
+function show(){
+	var loader=document.getElementById('loader');
+	var webpage=document.getElementById('webpage');
+	loader.style.display="none";
+	webpage.style.display="block";
+
+}
+
+</script>
+
+
